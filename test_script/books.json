@@ -1,0 +1,74 @@
+{
+  "data": [
+    {
+      "title": "Lord Of The Rings",
+      "author": "J.R.R. Tolkien",
+      "publisher": "Allen & Unwin",
+      "publicationDate": "1954-07-29T00:00:00Z",
+      "genre": "Fantasy",
+      "description": "The first book in Tolkien's epic fantasy trilogy...",
+      "language": "English",
+      "edition": 0,
+      "numCopies": 3,
+      "location": null,
+      "imageURL": "https://...",
+      "keywords": "Fantasy, Adventure, Middle-earth"
+    },
+    {
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "publisher": "Penguin Classics",
+      "publicationDate": "1813-01-28T00:00:00Z",
+      "genre": "Romance",
+      "description": "A witty comedy of manners by a beloved classic author...",
+      "language": "English",
+      "edition": 1,
+      "numCopies": 2,
+      "location": "Floor 2, Fiction Section",
+      "imageURL": "https://...",
+      "keywords": "Romance, Comedy, England, 19th Century"
+    },
+    {
+      "title": "The Hitchhiker's Guide to the Galaxy",
+      "author": "Douglas Adams",
+      "publisher": "Pan Books",
+      "publicationDate": "1979-10-12T00:00:00Z",
+      "genre": "Science Fiction",
+      "description": "The adventures of Arthur Dent after Earth is destroyed...",
+      "language": "English",
+      "edition": 3,
+      "numCopies": 1,
+      "location": null,
+      "imageURL": "https://...",
+      "keywords": "Science Fiction, Comedy, Space Travel"
+    },
+    {
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "publisher": "J.B. Lippincott & Co.",
+      "publicationDate": "1960-07-11T00:00:00Z",
+      "genre": "Historical Fiction",
+      "description": "A coming-of-age story set in the American South during the 1930s...",
+      "language": "English",
+      "edition": 2,
+      "numCopies": 5,
+      "location": "Floor 1, Classics Section",
+      "imageURL": "https://...",
+      "keywords": "Historical Fiction, Coming-of-Age, Racism, Justice"
+    },
+    {
+      "title": "One Hundred Years of Solitude",
+      "author": "Gabriel García Márquez",
+      "publisher": "Editorial Sudamericana",
+      "publicationDate": "1967-05-30T00:00:00Z",
+      "genre": "Magical Realism",
+      "description": "An epic chronicle of a family through generations...",
+      "language": "Spanish",
+      "edition": 5,
+      "numCopies": 1,
+      "location": "Floor 3, Foreign Language Section",
+      "imageURL": "https://...",
+      "keywords": "Magical Realism, Family Saga, Latin America"
+    }
+  ]
+}

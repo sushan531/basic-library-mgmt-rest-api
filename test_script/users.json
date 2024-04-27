@@ -1,0 +1,32 @@
+{
+  "data": [
+    {
+      "firstname": "Tony",
+      "lastname": "Start",
+      "email": "tonystark@mail.com",
+      "contactNumber": "+9771234567890",
+      "address": "Cape Town"
+    },
+    {
+      "firstname": "Hawk",
+      "lastname": "Eye",
+      "email": "hawkeye@mail.com",
+      "contactNumber": "+9771234567890",
+      "address": "My secret address"
+    },
+    {
+      "firstname": "Ant",
+      "lastname": "Man",
+      "email": "antman@mail.com",
+      "contactNumber": "+9771234567890",
+      "address": "Pym's House"
+    },
+    {
+      "firstname": "Black",
+      "lastname": "Panther",
+      "email": "blackpanther@mail.com",
+      "contactNumber": "+9771234567890",
+      "address": "Wakanda"
+    }
+  ]
+}

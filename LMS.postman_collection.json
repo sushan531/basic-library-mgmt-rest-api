@@ -1,0 +1,309 @@
+{
+	"info": {
+		"_postman_id": "e379b0a6-1067-454e-bb10-319669b74971",
+		"name": "LMS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28264795"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"item": [
+				{
+					"name": "Add Book",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"title\": \"LOTR2\",\n  \"author\": \"J.R.R. Tolkien\",\n  \"publisher\": \"Allen & Unwin\",\n  \"publicationDate\": \"1954-07-29T00:00:00Z\",\n  \"genre\": \"Fantasy\",\n  \"description\": \"The first book in Tolkien's epic fantasy trilogy...\",\n  \"language\": \"English\",\n  \"edition\": 0,\n  \"numCopies\": 3,\n  \"location\": null,\n  \"imageURL\": \"https://...\",\n  \"keywords\": \"Fantasy, Adventure, Middle-earth\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/books/add",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"books",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstname\":\"Foo\",\n    \"lastname\": \"Bar\",\n    \"email\": \"foobar2@mail.com\",\n    \"contactNumber\": \"+9771234567890\",\n    \"address\": \"My secret address\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/users/add",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"users",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Book Borrowed",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userEmail\": \"foobar2@mail.com\",\n    \"bookTitle\": \"LOTR1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/borrow/add",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"borrow",
+								"add"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Read",
+			"item": [
+				{
+					"name": "List All Books",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/books/list",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"books",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List All Borrowed Books",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/borrow/list",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"borrow",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List All Books Paginated",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/borrow/list",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"borrow",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List All Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/users/list",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"users",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Books By Title/Author",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/books/search?search-text=LOTR",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"books",
+								"search"
+							],
+							"query": [
+								{
+									"key": "search-text",
+									"value": "LOTR"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Count Remaining Book",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/books/count",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"books",
+								"count"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Update",
+			"item": [
+				{
+					"name": "Update Book",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"edition\": 6,\n  \"numCopies\": 30\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/books/update?book_id=10",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"books",
+								"update"
+							],
+							"query": [
+								{
+									"key": "book_id",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Return Borrowed Book Status",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userEmail\": \"foobar2@mail.com\",\n    \"bookTitle\": \"LOTR1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/borrow/return",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"borrow",
+								"return"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Delete",
+			"item": [
+				{
+					"name": "Delete book",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/books/delete?book_id=711",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"books",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "book_id",
+									"value": "711"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
